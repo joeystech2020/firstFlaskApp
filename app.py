@@ -12,6 +12,7 @@ from resources.tag import blp as TagBluePrint
 from resources.user import blp as UserBluePrint
 from flask_jwt_extended import JWTManager
 from blocklist import BLOCKLIST
+from dotenv import load_dotenv
 
 
 from db import db
@@ -19,6 +20,7 @@ import models
 ##app.py file fully ready & ready to be pushed
 def create_app(db_url=None):
     app = Flask(__name__)
+    load_dotenv()
     app.config["PROPAGATE_EXCEPTIONS"] = True
     app.config["API_TITLE"] = "Stores Rest API"
     app.config["API_VERSION"] = "v1"
