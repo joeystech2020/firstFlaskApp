@@ -6,8 +6,6 @@ from flask import Flask,request,jsonify
 from flask_smorest import abort
 from flask_smorest import Api
 from flask_migrate import Migrate
-
-
 from resources.item import blp as ItemBlueprint
 from resources.store import blp as StoreBlueprint
 from resources.tag import blp as TagBluePrint
