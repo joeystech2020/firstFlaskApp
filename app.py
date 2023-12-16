@@ -16,7 +16,7 @@ from blocklist import BLOCKLIST
 
 from db import db
 import models
-##app.py file fully ready
+##app.py file fully ready & ready to be pushed
 def create_app(db_url=None):
     app = Flask(__name__)
     app.config["PROPAGATE_EXCEPTIONS"] = True
