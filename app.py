@@ -6,9 +6,7 @@ from flask import Flask,request,jsonify
 from flask_smorest import abort
 from flask_smorest import Api
 from flask_migrate import Migrate
-
 from resources.item import blp as ItemBlueprint
-
 from resources.store import blp as StoreBlueprint
 from resources.tag import blp as TagBluePrint
 from resources.user import blp as UserBluePrint
@@ -18,7 +16,7 @@ from blocklist import BLOCKLIST
 
 from db import db
 import models
-
+##app.py file fully ready
 def create_app(db_url=None):
     app = Flask(__name__)
     app.config["PROPAGATE_EXCEPTIONS"] = True
